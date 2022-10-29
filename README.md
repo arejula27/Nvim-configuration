@@ -1,5 +1,28 @@
 # Nvim-configuration
 
+## Default keys
+<table>
+<tr><th>Operator</th><th>Motion</th></tr>
+<tr><td>
+
+|Action| Mapping | 
+|--|--|
+|Delete| `d`|
+
+</td><td>
+
+|Action|Mapping|
+|--|--|
+|Go up|`j`|
+|Go down|`k`|
+|Go left|`h`|
+|Go right|`l`|
+|Next word|`w`|
+|Word  back|`b`|
+
+</td></tr> </table>
+
+
 ## General Mappings
 
 | Action       | Mapping     |
