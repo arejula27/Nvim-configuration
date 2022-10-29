@@ -1,6 +1,8 @@
 # Nvim-configuration
 
 ## Default keys
+A command is composed by `<Operator> <number> <motion>`
+
 <table>
 <tr><th>Operator</th><th>Motion</th></tr>
 <tr><td>
@@ -8,6 +10,11 @@
 |Action| Mapping | 
 |--|--|
 |Delete| `d`|
+|Undo |`u`|
+|Undo the whole line | `U`|
+|Paste under the cursor| `p`|
+|Paste above the cursor | `P`|
+|Replace and go inside *Insert mode* | `c`|
 
 </td><td>
 
@@ -19,6 +26,9 @@
 |Go right|`l`|
 |Next word|`w`|
 |Word  back|`b`|
+|From cursor to end of the word|`e`|
+|Begining of the line|`0`|
+|From cursor to end of the line|`$`|
 
 </td></tr> </table>
 
