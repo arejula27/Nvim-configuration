@@ -45,6 +45,14 @@ A command is composed by `<Operator> <number> <motion>`
 | Save file    | `Space + w` |
 | Explore dir  | `Space + pv`|
 
+## Fuzzy finder Mappings
+
+| Action       | Mapping     |
+|--------------|-------------|
+| Git files    | `space + ff`   |
+| Project files    | `space + pf`   |
+
+
 
 ## Todo
 - Add [which key](https://github.com/folke/which-key.nvim)
