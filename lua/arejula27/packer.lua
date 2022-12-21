@@ -53,5 +53,8 @@ use {
         {'crispgm/nvim-go'}
      }
 }
+-- notify
+use {'rcarriga/nvim-notify'}
+
 
 end)
