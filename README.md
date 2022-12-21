@@ -1,5 +1,11 @@
 # Nvim-configuration
 
+
+## Requirements
+ - NeoVim 
+ - Tree-sitter CLI 
+ - gcc 
+
 ## Default keys
 A command is composed by `<Operator> <number> <motion>`
 
