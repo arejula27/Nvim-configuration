@@ -38,11 +38,12 @@ A command is composed by `<Operator> <number> <motion>`
 | Action       | Mapping     |
 |--------------|-------------|
 | Leader key   | `space`     |
-| Escape key   | `jk`        |
+| Escape key   | `jk` or `jj`|
 | Close buffer | `Space + c` |
 | Quit         | `Space + q` |
 | Force quit   | `Ctrl + q`  |
 | Save file    | `Space + w` |
+| Explore dir  | `Space + pv`|
 
 
 ## Todo
