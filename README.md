@@ -58,6 +58,13 @@ A command is composed by `<Operator> <number> <motion>`
 | Git files    | `space + ff`   |
 | Project files    | `space + pf`   |
 
+## Document
+
+| Action       | Mapping     |
+|--------------|-------------|
+| Show line diagnostics   | `g + l`   |
+| hover (show descriptions)    | `Shift + k`   |
+
 
 
 ## Todo
