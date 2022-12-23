@@ -46,15 +46,15 @@ return require('packer').startup(function(use)
           {'rafamadriz/friendly-snippets'},
       }
 }
--- nvim-go
-use {
+    -- nvim-go
+    use {
     'crispgm/nvim-go',
-    requires ={
+        requires ={
         {'crispgm/nvim-go'}
-     }
-}
--- notify
-use {'rcarriga/nvim-notify'}
-
-
+        }
+    }
+-- Toggle terminal 
+use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  require("toggleterm").setup()
+end}
 end)
