@@ -66,6 +66,14 @@ A command is composed by `<Operator> <number> <motion>`
 | hover (show descriptions)    | `Shift + k`   |
 
 
+## Terminal
+
+| Action       | Mapping     |
+|--------------|-------------|
+| Show vertical terminal   | `t + v`   |
+| Show horizontal terminal   | `t + h`   |
+| Show floating terminal   | `t + f`   |
+
 
 ## Todo
 - Add [which key](https://github.com/folke/which-key.nvim)
