@@ -1,5 +1,15 @@
 # Nvim-configuration
 
+## Getting started
+1. Dowload the content of the repo on the `~/.config/nvim` folder
+2. Run the following command:
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+ ``` 
+3. Enter neovim and open  `lua/arejula27/packer.lua`. On the file run `:so`
+4. On neo vim run `PackerSync`
+
 
 ## Requirements
  - NeoVim 
