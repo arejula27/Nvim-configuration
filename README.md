@@ -84,6 +84,14 @@ A command is composed by `<Operator> <number> <motion>`
 | Show horizontal terminal   | `t + h`   |
 | Show floating terminal   | `t + f`   |
 
+## Buffers
+
+| Action       | Mapping     |
+|--------------|-------------|
+| Split horizontal  | `Ctrl + w  + s`   |
+| Split vertical  | `Ctrl + w  + v`   |
+| Change buffer  | `Ctrl + w  + <Motion>`  |
+
 
 ## Todo
 - Add [which key](https://github.com/folke/which-key.nvim)
