@@ -92,6 +92,14 @@ A command is composed by `<Operator> <number> <motion>`
 | Split vertical  | `Ctrl + w  + v`   |
 | Change buffer  | `Ctrl + w  + <Motion>`  |
 
+## Tabs 
+
+| Action       | Mapping     |
+|--------------|-------------|
+| Go next  | `g + t `   |
+| Go  previous  | `g + T`   |
+
+
 
 ## Todo
 - Add [which key](https://github.com/folke/which-key.nvim)
