@@ -15,6 +15,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  - NeoVim 
  - Tree-sitter CLI 
  - gcc 
+ - [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) is required for live_grep and grep_string and is the first priority for find_files.
 
 ## Default keys
 A command is composed by `<Operator> <number> <motion>`
@@ -70,6 +71,7 @@ A command is composed by `<Operator> <number> <motion>`
 |--------------|-------------|
 | Git files    | `space + ff`   |
 | Project files    | `space + pf`   |
+| Text inside files  (live grep)   | `space + pg`   |
 
 ## Document
 
