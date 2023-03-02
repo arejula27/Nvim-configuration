@@ -60,6 +60,9 @@ A command is composed by `<Operator> <number> <motion>`
 | Force quit   | `Ctrl + q`  |
 | Save file    | `Space + w` |
 | Explore dir  | `Space + pv`|
+| Toggle diagnostics list | `Space + xx`|
+| Toggle workspace diagnostics list | `Space + xw`|
+| Toggle document diagnostics list | `Space + xd`|
 
 ## Fuzzy finder Mappings
 
