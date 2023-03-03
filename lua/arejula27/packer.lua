@@ -53,8 +53,18 @@ return require('packer').startup(function(use)
         {'crispgm/nvim-go'}
         }
     }
--- Toggle terminal 
-use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-  require("toggleterm").setup()
-end}
+    --Trouble (diagnostics) 
+    use {
+        "folke/trouble.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
+        config = function()
+         require("trouble").setup {}
+  end
+}
+    -- Toggle terminal 
+    use {
+        "akinsho/toggleterm.nvim",
+        tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
 end)
