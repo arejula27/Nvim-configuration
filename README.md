@@ -1,10 +1,21 @@
 # Nvim-configuration
 
+## Getting started
+1. Dowload the content of the repo on the `~/.config/nvim` folder
+2. Run the following command:
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+ ``` 
+3. Enter neovim and open  `lua/arejula27/packer.lua`. On the file run `:so`
+4. On neo vim run `PackerSync`
+
 
 ## Requirements
  - NeoVim 
  - Tree-sitter CLI 
  - gcc 
+ - [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) is required for live_grep and grep_string and is the first priority for find_files.
 
 ## Default keys
 A command is composed by `<Operator> <number> <motion>`
@@ -50,6 +61,9 @@ A command is composed by `<Operator> <number> <motion>`
 | Force quit   | `Ctrl + q`  |
 | Save file    | `Space + w` |
 | Explore dir  | `Space + pv`|
+| Toggle diagnostics list | `Space + xx`|
+| Toggle workspace diagnostics list | `Space + xw`|
+| Toggle document diagnostics list | `Space + xd`|
 
 ## Fuzzy finder Mappings
 
@@ -57,6 +71,7 @@ A command is composed by `<Operator> <number> <motion>`
 |--------------|-------------|
 | Git files    | `space + ff`   |
 | Project files    | `space + pf`   |
+| Text inside files  (live grep)   | `space + pg`   |
 
 ## Document
 
@@ -73,6 +88,22 @@ A command is composed by `<Operator> <number> <motion>`
 | Show vertical terminal   | `t + v`   |
 | Show horizontal terminal   | `t + h`   |
 | Show floating terminal   | `t + f`   |
+
+## Buffers
+
+| Action       | Mapping     |
+|--------------|-------------|
+| Split horizontal  | `Ctrl + w  + s`   |
+| Split vertical  | `Ctrl + w  + v`   |
+| Change buffer  | `Ctrl + w  + <Motion>`  |
+
+## Tabs 
+
+| Action       | Mapping     |
+|--------------|-------------|
+| Go next  | `g + t `   |
+| Go  previous  | `g + T`   |
+
 
 
 ## Todo
