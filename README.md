@@ -10,7 +10,7 @@ git clone --depth 1 git@github.com:arejula27/Nvim-configuration.git ~/.config/nv
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  ``` 
-3. Enter neovim and open  `lua/arejula27/packer.lua`. On the file run `:so`
+3. Enter neovim and open  `.config/nvim/lua/arejula27/packer.lua`. On the file run `:so`
 4. On neo vim run `PackerSync`
 
 
