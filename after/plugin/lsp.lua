@@ -4,13 +4,6 @@ lsp.preset('recommended')
 
 
 
-lsp.ensure_installed({
-  'tsserver',
-  'eslint',
-  'lua_ls',
-  'rust_analyzer',
-  'gopls',
-})
 
 
 -- Fix Undefined global 'vim'
@@ -31,6 +24,16 @@ lsp.on_attach(function(client, bufnr)
       vim.cmd.LspStop('eslint')
       return
   end
+
+    require('mason').setup({})
+    require('mason-lspconfig').setup({
+    -- Replace the language servers listed here
+    -- with the ones you want to install
+    ensure_installed = { 'gopls'},
+    handlers = {
+        lsp.default_setup,
+        }
+    })
 
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)

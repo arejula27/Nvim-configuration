@@ -23,7 +23,12 @@ return require('packer').startup(function(use)
 
   -- parsing and syntax hylighting
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-
+  -- Mason
+  use {
+    "williamboman/mason.nvim",
+     "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    }
   -- LSP 
   use {
       'VonHeikemen/lsp-zero.nvim',
