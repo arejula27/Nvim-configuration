@@ -69,6 +69,13 @@ A command is composed by `<Operator> <number> <motion>`
 | Toggle workspace diagnostics list | `Space + xw`|
 | Toggle document diagnostics list | `Space + xd`|
 
+## Diagnostic Mappings
+| Action       | Mapping     |
+|--------------|-------------|
+| Toggle diagnostics    | `space + xx`   |
+| Toggle document diagnostics    | `space + xd`   |
+| Toggle workspace diagnostics    | `space + xw`   |
+
 ## Fuzzy finder Mappings
 
 | Action       | Mapping     |
