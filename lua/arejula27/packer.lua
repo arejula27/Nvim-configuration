@@ -47,12 +47,12 @@ return require('packer').startup(function(use)
       }
 }
     -- nvim-go
-    --use {
-    --'crispgm/nvim-go',
-      --  requires ={
-        --{'crispgm/nvim-go'}
-        --}
-    --}
+    use {
+    'crispgm/nvim-go',
+        requires ={
+        {'crispgm/nvim-go'}
+        }
+    }
     --Trouble (diagnostics) 
     use {
         "folke/trouble.nvim",
@@ -67,4 +67,13 @@ return require('packer').startup(function(use)
         tag = '*', config = function()
         require("toggleterm").setup()
     end}
+
+    --status bar
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+
+
+
 end)
