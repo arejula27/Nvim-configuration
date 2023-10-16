@@ -113,3 +113,5 @@ A command is composed by `<Operator> <number> <motion>`
 ## Todo
 - Add [which key](https://github.com/folke/which-key.nvim)
 - Add [Smart Splits](https://github.com/mrjones2014/smart-splits.nvim)
+- Add [telescope projects](https://github.com/nvim-telescope/telescope-project.nvim)
+- Create dashboard on open
