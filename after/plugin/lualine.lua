@@ -1,7 +1,7 @@
 -- Bubbles config for lualine
 -- Author: lokesh-krishna
 -- MIT license, see LICENSE for more details.
-
+-- DOCS: https://github.com/nvim-lualine/lualine.nvim
 -- stylua: ignore
 local colors = {
   blue   = '#80a0ff',
