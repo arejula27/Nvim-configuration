@@ -18,23 +18,11 @@ lsp.configure('lua_ls', {
 })
 
 lsp.on_attach(function(client, bufnr)
-  local opts = {buffer = bufnr, remap = false}
-
-  if client.name == "eslint" then
-      vim.cmd.LspStop('eslint')
-      return
-  end
-
-    require('mason').setup({})
-    require('mason-lspconfig').setup({
-    -- Replace the language servers listed here
-    -- with the ones you want to install
-    ensure_installed = { 'gopls'},
-    handlers = {
-        lsp.default_setup,
-        }
-    })
-
+    lsp.default_keymaps({buffer = bufnr})
+    if client.name == "eslint" then
+        vim.cmd.LspStop('eslint')
+        return
+    end
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
   vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
@@ -46,6 +34,9 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
   vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
 end)
+
+ -- LSP servers
+lsp.setup_servers({'lua_ls', 'gopls'})
 lsp.setup()
 
  -- diagnostics inline (errors, warning,etc.)
