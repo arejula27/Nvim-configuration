@@ -19,6 +19,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  - Tree-sitter CLI 
  - gcc 
  - [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) is required for live_grep and grep_string and is the first priority for find_files.
+ - [Lua lsp sever](https://luals.github.io/wiki/build/)
 
 ## Default keys
 A command is composed by `<Operator> <number> <motion>`
