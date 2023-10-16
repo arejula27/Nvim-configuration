@@ -100,6 +100,18 @@ A command is composed by `<Operator> <number> <motion>`
 | Split horizontal  | `Ctrl + w  + s`   |
 | Split vertical  | `Ctrl + w  + v`   |
 | Change buffer  | `Ctrl + w  + <Motion>`  |
+| Go next buffer  | `Ctrl + w  + w`  |
+| Go next tab  | `g + t `  |
+| Go prior tab  | `g + T `  |
+
+
+## Telescope
+| Action       | Mapping     |
+|--------------|-------------|
+| New window Split horizontal  | `Ctrl + x`   |
+| New window Split horizontal  | `Ctrl + v`   |
+| New tab   | `Ctrl + t`   |
+
 
 ## Tabs 
 
