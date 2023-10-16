@@ -23,10 +23,7 @@ return require('packer').startup(function(use)
 
   -- parsing and syntax hylighting
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  -- Mason
   use {
-    "williamboman/mason.nvim",
-     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     }
   -- LSP 
@@ -50,12 +47,12 @@ return require('packer').startup(function(use)
       }
 }
     -- nvim-go
-    use {
-    'crispgm/nvim-go',
-        requires ={
-        {'crispgm/nvim-go'}
-        }
-    }
+    --use {
+    --'crispgm/nvim-go',
+      --  requires ={
+        --{'crispgm/nvim-go'}
+        --}
+    --}
     --Trouble (diagnostics) 
     use {
         "folke/trouble.nvim",
