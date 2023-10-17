@@ -42,8 +42,13 @@ return require('packer').startup(function(use)
         {'L3MON4D3/LuaSnip'},
 
           -- Snippets
-          {'L3MON4D3/LuaSnip'},
-          {'rafamadriz/friendly-snippets'},
+
+        use { 'saadparwaiz1/cmp_luasnip' },
+        use {
+            'L3MON4D3/LuaSnip',
+            after = 'nvim-cmp',
+            config = function() require('arejula27.snippets') end,
+}
       }
 }
     -- nvim-go
