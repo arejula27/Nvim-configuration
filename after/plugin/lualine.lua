@@ -7,7 +7,7 @@
 
 require('lualine').setup {
   options = {
-    theme = "rose-pine-dawn",
+    --    theme = "", -- check: https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
@@ -16,8 +16,8 @@ require('lualine').setup {
       { 'mode', separator = { left = '' }, right_padding = 2 },
     },
     lualine_b = { 'filename', 'branch' },
-    lualine_c = { 'fileformat' },
-    lualine_x = {},
+    lualine_c = { 'fileformat'},
+    lualine_x = {'diagnostics'},
     lualine_y = { 'filetype', 'progress' },
     lualine_z = {
       { 'location', separator = { right = '' }, left_padding = 2 },
@@ -31,6 +31,8 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = { 'location' },
   },
-  tabline = {},
-  extensions = {},
+  tabline = {
+    --lualine_c={'buffers'},
+    lualine_z={{'tabs',separator = {right = '',left = ''} ,left_padding = 2}},
+  }
 }
