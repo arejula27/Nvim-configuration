@@ -27,30 +27,28 @@ return require('packer').startup(function(use)
     "neovim/nvim-lspconfig",
     }
   -- LSP 
-  use {
-      'VonHeikemen/lsp-zero.nvim',
-      requires = {
-        --- Uncomment these if you want to manage LSP servers from neovim
-        -- {'williamboman/mason.nvim'},
-        -- {'williamboman/mason-lspconfig.nvim'},
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        requires = {
+            --- Uncomment these if you want to manage LSP servers from neovim
+            -- {'williamboman/mason.nvim'},
+            -- {'williamboman/mason-lspconfig.nvim'},
 
-        -- LSP Support
-        {'neovim/nvim-lspconfig'},
-        -- Autocompletion
-        {'hrsh7th/nvim-cmp'},
-        {'hrsh7th/cmp-nvim-lsp'},
-        {'L3MON4D3/LuaSnip'},
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'L3MON4D3/LuaSnip'},
 
-          -- Snippets
-
-        use { 'saadparwaiz1/cmp_luasnip' },
-        use {
-            'L3MON4D3/LuaSnip',
-            after = 'nvim-cmp',
-            config = function() require('arejula27.snippets') end,
-}
-      }
-}
+            -- Snippets
+            { 'saadparwaiz1/cmp_luasnip' },
+            {
+                'L3MON4D3/LuaSnip',
+                after = 'nvim-cmp',
+            }
+        }
+    }
     -- nvim-go
     use {
     'crispgm/nvim-go',
