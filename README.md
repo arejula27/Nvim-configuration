@@ -127,6 +127,14 @@ A command is composed by `<Operator> <number> <motion>`
 | Go next  | `g + t `   |
 | Go  previous  | `g + T`   |
 
+## Snippets
+For listing all snippets use the command `:LuaSnipListAvailable`
+| Action       | Mapping     |
+|--------------|-------------|
+| Go next parameter | `ctrl + j `   |
+| Go  previous parameter  | `ctrl + k`   |
+
+
 
 
 ## Todo
