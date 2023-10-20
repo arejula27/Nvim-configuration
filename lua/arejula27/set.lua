@@ -19,5 +19,8 @@ vim.opt.wrap = false
 vim.g.mapleader = " "
 
 -- Clipboard
---vim.cmd[[set clipboard=unnamedplus]]
 vim.opt.clipboard = "unnamedplus"
+
+--Disable mouse
+vim.o.mouse = ''
+

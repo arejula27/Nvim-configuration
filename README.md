@@ -140,6 +140,3 @@ For listing all snippets use the command `:LuaSnipListAvailable`
 ## Todo
 - Add [which key](https://github.com/folke/which-key.nvim)
 - Add [Smart Splits](https://github.com/mrjones2014/smart-splits.nvim)
-- Add [telescope projects](https://github.com/nvim-telescope/telescope-project.nvim)
-- Create dashboard on open on [startup](https://github.com/startup-nvim/startup.nvim)
-- 
