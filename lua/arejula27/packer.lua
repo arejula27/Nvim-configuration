@@ -17,8 +17,12 @@ return require('packer').startup(function(use)
   -- Telescope fuzzy finding
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
+
       -- or                            , branch = '0.1.x',
-      requires = { {'nvim-lua/plenary.nvim'} }
+      requires = {
+          {'nvim-lua/plenary.nvim'},
+          {'nvim-telescope/telescope-project.nvim'}
+        }
   }
 
   -- parsing and syntax hylighting
