@@ -9,6 +9,8 @@ nnoremap("<leader>q","<cmd>q<CR>") -- Salir del nvim
 nnoremap("<C-q>","<cmd>q!<CR>") -- forzar salir de nvim  
 nnoremap("<leader>c","<cmd>bdelete<CR>") -- Salir del archivo (cerrar buffer)
 
+nnoremap("<leader>;","<cmd>Alpha<CR>")
+
 -- Insert mode
 inoremap("jk","<ESC>l")
 inoremap("jj","<ESC>l")
