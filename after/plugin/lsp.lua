@@ -36,7 +36,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
  -- LSP servers
-lsp.setup_servers({'lua_ls', 'gopls'})
+lsp.setup_servers({'lua_ls', 'gopls','pylsp','rust_analyzer'})
 lsp.setup()
 
  -- diagnostics inline (errors, warning,etc.)
@@ -67,3 +67,4 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({select = false}),
   }
 })
+require("mason").setup()
