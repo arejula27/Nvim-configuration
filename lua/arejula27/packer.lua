@@ -89,5 +89,6 @@ return require('packer').startup(function(use)
 
     use {'jiangmiao/auto-pairs'}
 
-
+    -- Copilot
+    use {'github/copilot.vim'}
 end)
